@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 30px 12px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  width: calc(100%);
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info {
+  display: flex;
+  position: relative;
+  background-color: white;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  border-radius: 14px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+    background: red;
+  }
+
+  .grid {
+    flex-direction: row;
+  }
+  .card-wrapper {
+    width: calc(100% / 4 - 30px);
+  }
+}
